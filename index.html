@@ -135,6 +135,16 @@
                 <textarea name="userOpinionDetails" id="opinionDetails" placeholder="Digite aqui de maneira detalhada" cols="40" rows="10"></textarea>
             </fieldset>
 
+            <fieldset>
+                <legend>Consentimento e resultados</legend>
+                <label for="agreement">Você concorda em conceder suas informações para os fins de pesquisa conforme a legislação LGPD?</label>
+                <input type="checkbox" name="userAgrees" id="agreement" value="accepted" required>
+                <br>
+
+                <label for="sendEmail">Gostaria de receber o e-mail com os resultados?</label>
+                <input type="checkbox" name="userSendEmail" id="sendEmail" value="accepted">
+            </fieldset>
+
             <button type="reset">Limpar</button>
             <button type="submit">Enviar</button>
         </form>
