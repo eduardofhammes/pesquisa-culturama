@@ -111,6 +111,30 @@
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
 
+
+            <fieldset>
+                <legend>Opinião</legend>
+
+                <p>Qual seu nível de satisfação com nosso serviço?</p>
+
+                <input type="radio" name="userOpinion" id="otima" value="otima">
+                <label for="otima">Ótima</label>
+
+                <input type="radio" name="userOpinion" id="boa" value="boa">
+                <label for="boa">Boa</label>
+
+                <input type="radio" name="userOpinion" id="regular" value="regular">
+                <label for="regular">Regular</label>
+
+                <input type="radio" name="userOpinion" id="ruim" value="ruim">
+                <label for="ruim">Ruim</label>
+                <br>
+
+                <label for="opinionDetails">Escreva sua opinião: </label>
+                <br>
+                <textarea name="userOpinionDetails" id="opinionDetails" placeholder="Digite aqui de maneira detalhada" cols="40" rows="10"></textarea>
+            </fieldset>
+
             <button type="reset">Limpar</button>
             <button type="submit">Enviar</button>
         </form>
