@@ -2,14 +2,133 @@
 /* importando fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital@0;1&display=swap');
 
+
+/* reset global css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
 body {
+    background-color: #f9f9f9;
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* editando o main, a parte que possui todo o conteúdo principal*/
+main{
+    width: 100%; /* largura de 100% da tela (config para celular) */
+    max-width: 700px; /* porém a largura máxima será de 700px, não vai aumentar mais que isso*/
+    margin: 0 auto; /* centralizando horizontalmente */ 
+}
+
+header{
+    text-align: center; /* alinhando ao centro (como os elementos do header tem displayu in-line, é possível alinhar com text-align ao invés de margin: auto)*/
+    margin-bottom: 40px;
+}
+/* config da img dentro do header*/
+header img {
+    width: 100px; /* diminuindo largura para ganhar qualidade*/
+}
+
 h1 {
     font-family: "Fjalla One", sans-serif;
+    font-size: 2.2em;
     font-weight: 400; /* garantindo o tamanho e estilo corretos da fonte*/
     font-style: normal;
+}
+
+/* configs do form*/
+form{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* edição geral de cada field presente no html (seção das questões)*/
+fieldset{
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.08); /* define borda personalizada */
+    border-radius: 8px; /* circulo de cada borda de cada seção */
+    margin-bottom: 15px; /* margin na parte de baixo para deixar separado cada seção */
+}
+
+/* config do legend - título de cada seção do form */
+legend {
+    font-weight: bold; /* deixando com aparencia de título*/
+    padding: 0px 5px;
+}
+
+/* config de todas as labels */
+label{
+    display: inline-block; /* transforma de inline para inline-block*/
+    margin-bottom: 5px; /* afasta um pouco a label do input*/
+}
+
+p{
+    margin-bottom: 15px; /* configura a margin para deixar um espaçamento entre elementos*/
+}
+/* editando todos os inputs, selects e text-area do form*/
+input, select, text-area{
+    width: 100%; /* ocuparao 100% do tamanho do container (form)*/
+    padding: 10px;
+    margin-bottom: 15px; /* deixa um espaço entre cada elemento */
+    border: 2px solid rgba(0, 0, 0, 0.08); /* deixa com a mesma borda do fieldset*/
+    border-radius: 8px;
+}
+
+textarea{
+    min-height: 100px; /* definindo altura minima do elemento*/
+    min-width: 350px; /* define largura minima para melhorar o espaço*/
+}
+
+/* edita somente o input do tipo checkbox e radio */
+input[type="checkbox"], input[type=radio]{
+    width: auto; /* define que esse inputs especificos irão possuir a largura natural deles*/
+}
+
+
+input[type="color"] {
+    width: 80px;
+    padding: 0px 5px; /* configurando um padding diferente para esse elemento, facilitando a visualização */
+}
+
+/* config dos inputs, select e textarea quando estiverem inválidos*/
+input:invalid, select:invalid, textarea:invalid{
+    border-color: red; /* verifica com o html se o campo foi preenchido corretamente. Se não foi, coloca essa borda vermelha para informar ao user */
+}
+
+/* configura os inputs quando forem informados valores válidos*/
+input:valid, select:valid, textarea:valid{
+    border-color: green; /* ao contrário do :invalid, será colocado a borda desta cor caso o valor informado pelo user seja de acordo com a validação desse campo*/
+}
+
+/* aplicando style aos buttons (enviar e limpar) */
+button{
+    background-color: #ffffff;
+    width: 100px;
+    height: 30px;
+    margin-right: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.08); /* mesma borda do form, labels e inputs*/
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* atributos quando o mouse estiver neste elemento */
+button[type="submit"]:hover{
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover{
+    background-color: red;
+    color: #ffffff;
+}
+
+/* atributos quando for clicado neste elemento */
+button:active{
+    background-color: #f5f5f5;
 }
