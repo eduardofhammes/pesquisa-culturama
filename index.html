@@ -34,7 +34,8 @@
                         <br>
 
                         <label for="phoneNumber">Telefone</label>
-                        <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="Número com 11 digitos">
+                        <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="Número com 11 digitos" aria-describedby="phoneHelp"> <!-- acessibilidade - id do small é utilizado para que o leitor de tela faça sua leitura-->
+                        <small id="phoneHelp">Preencha o campo com 11 digitos: DDD + número sem espaços ou hífen</small>
                         <br>
 
                         <label for="image">Upload de foto</label>
