@@ -85,8 +85,8 @@ textarea{
     min-width: 350px; /* define largura minima para melhorar o espaço*/
 }
 
-/* tira a margin abaixo para o input do telefone*/
-input#phoneNumber{
+/* tira a margin abaixo para o input do telefone e de imagem*/
+input#phoneNumber, input#image{
     margin-bottom: 0;
 }
 

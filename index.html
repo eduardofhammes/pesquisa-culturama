@@ -34,12 +34,13 @@
                         <br>
 
                         <label for="phoneNumber">Telefone</label>
-                        <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="Número com 11 digitos" aria-describedby="phoneHelp"> <!-- acessibilidade - id do small é utilizado para que o leitor de tela faça sua leitura-->
+                        <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="Número com 11 digitos" aria-describedby="phoneHelp"> <!-- acessibilidade - id do small é utilizado para que o leitor de tela faça sua leitura da descrição do small-->
                         <small id="phoneHelp">Preencha o campo com 11 digitos: DDD + número sem espaços ou hífen</small>
                         <br>
 
                         <label for="image">Upload de foto</label>
-                        <input type="file" name="userImage" id="image" accept="image/*">
+                        <input type="file" name="userImage" id="image" accept="image/*" aria-describedby="imageHelp">
+                        <small id="imageHelp">Faça o upload de uma foto sua no formato PNG ou JPEG</small>
                         <br>
                 </fieldset> 
                 
