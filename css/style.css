@@ -85,6 +85,16 @@ textarea{
     min-width: 350px; /* define largura minima para melhorar o espaço*/
 }
 
+/* tira a margin abaixo para o input do telefone e de imagem*/
+input#phoneNumber, input#image{
+    margin-bottom: 0;
+}
+
+small{
+    display: inline-block; /* para que seja possível colocar margin abaixo, precisa ser inline-block*/
+    margin-bottom: 15px;
+}
+
 /* edita somente o input do tipo checkbox e radio */
 input[type="checkbox"], input[type=radio]{
     width: auto; /* define que esse inputs especificos irão possuir a largura natural deles*/
